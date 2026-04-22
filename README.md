@@ -1,4 +1,4 @@
-# GPT Image 2 Dev
+# How to use GPT Image 2
 
 GPT Image 2 Dev is an AI image generator and browser-based editor for prompt-based creation, image edits, product visuals, and reference-led workflows.
 
