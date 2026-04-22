@@ -275,36 +275,38 @@ h3 {
 .hero-panel {
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  background:
-    linear-gradient(160deg, rgba(255, 251, 247, 0.95), rgba(235, 221, 206, 0.82)),
-    radial-gradient(circle at bottom right, rgba(141, 56, 23, 0.16), transparent 30%);
+  gap: 20px;
+  background: rgba(255, 251, 246, 0.92);
 }
 
 .hero-panel-wide {
-  padding: 22px;
+  grid-column: 1 / -1;
+  padding: 24px 26px 20px;
+  border-radius: 32px;
+  background: rgba(255, 252, 247, 0.96);
+  border-color: rgba(199, 170, 145, 0.24);
 }
 
 .prompt-box {
   display: block;
-  padding: 18px 18px 14px;
-  border-radius: var(--radius-lg);
-  border: 1px solid rgba(144, 113, 90, 0.18);
-  background: rgba(255, 255, 255, 0.78);
+  padding: 18px 18px 16px;
+  border-radius: 26px;
+  border: 1px solid rgba(205, 183, 162, 0.34);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .prompt-hint {
   display: block;
-  margin-bottom: 12px;
-  color: var(--muted);
+  margin-bottom: 10px;
+  color: #9a8b7d;
   font-size: 15px;
-  line-height: 1.55;
+  line-height: 1.45;
 }
 
 .prompt-box textarea {
   width: 100%;
-  min-height: 88px;
-  max-height: 88px;
+  min-height: 150px;
+  max-height: 150px;
   padding: 0;
   resize: none;
   border: 0;
@@ -319,6 +321,37 @@ h3 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
+}
+
+.panel-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.panel-grid-six {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.panel-grid div {
+  padding: 22px 18px;
+  border-radius: 24px;
+  background: rgba(251, 248, 242, 0.98);
+  border: 1px solid rgba(205, 183, 162, 0.34);
+  text-align: center;
+}
+
+.panel-grid span {
+  display: block;
+  color: #7f7063;
+  font-size: 12px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.panel-grid strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 20px;
 }
 
 .stat-grid div,
@@ -364,6 +397,7 @@ h3 {
 .hero-panel-footer {
   align-items: center;
   justify-content: space-between;
+  margin-top: 4px;
 }
 
 .chip-row {
@@ -381,23 +415,28 @@ h3 {
   min-height: 44px;
   padding: 0 16px;
   border-radius: 999px;
-  border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.88);
-  color: var(--ink);
+  border: 1px solid rgba(205, 183, 162, 0.34);
+  background: rgba(255, 255, 255, 0.96);
+  color: #75675a;
 }
 
 .hero-launch {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
+  width: 72px;
+  height: 72px;
   padding: 0;
-  border-radius: 20px;
+  border-radius: 28px;
   background: linear-gradient(135deg, var(--accent), var(--accent-strong));
   color: #fff;
-  font-size: 32px;
+  font-size: 38px;
   line-height: 1;
+}
+
+.hero-links,
+.panel-label {
+  display: none;
 }
 
 .logo-copy {
