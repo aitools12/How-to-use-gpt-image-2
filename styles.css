@@ -281,24 +281,38 @@ h3 {
     radial-gradient(circle at bottom right, rgba(141, 56, 23, 0.16), transparent 30%);
 }
 
-.prompt-card {
-  padding: 18px;
+.hero-panel-wide {
+  padding: 22px;
+}
+
+.prompt-box {
+  display: block;
+  padding: 18px 18px 14px;
   border-radius: var(--radius-lg);
-  background: rgba(39, 27, 19, 0.92);
-  color: #f8ebde;
+  border: 1px solid rgba(144, 113, 90, 0.18);
+  background: rgba(255, 255, 255, 0.78);
 }
 
-.prompt-title {
-  margin: 0 0 10px;
-  font-size: 13px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #f6b995;
+.prompt-hint {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.55;
 }
 
-.prompt-body {
-  margin: 0;
-  color: #f8ebde;
+.prompt-box textarea {
+  width: 100%;
+  min-height: 88px;
+  max-height: 88px;
+  padding: 0;
+  resize: none;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  line-height: 1.5;
 }
 
 .stat-grid {
@@ -338,6 +352,52 @@ h3 {
 
 .logo-cloud {
   padding-top: 0;
+}
+
+.hero-panel-footer,
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero-panel-footer {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chip-row {
+  align-items: center;
+}
+
+.chip-label {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 16px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.88);
+  color: var(--ink);
+}
+
+.hero-launch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  border-radius: 20px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  color: #fff;
+  font-size: 32px;
+  line-height: 1;
 }
 
 .logo-copy {
